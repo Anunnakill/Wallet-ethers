@@ -32,7 +32,8 @@ class Walletconnect {
       this.account = account;
 
       // signer实例
-      this.signer = new providers.Web3Provider(this.wallet);
+      const provider = new providers.Web3Provider(this.wallet);
+      this.signer = provider.getSigner();
 
       // 授权过程完毕
       return true;

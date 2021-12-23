@@ -40,7 +40,8 @@ class Walletlink {
       await this.wallet.enable();
 
       // signer实例
-      this.signer = new providers.Web3Provider(this.wallet);
+      const provider = new providers.Web3Provider(this.wallet);
+      this.signer = provider.getSigner();
 
       // 默认账号
       const account = await this.signer.getAddress();

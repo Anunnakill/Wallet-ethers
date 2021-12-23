@@ -23,7 +23,9 @@ class Portis {
       await this.wallet.provider.enable();
 
       // signer实例
-      this.signer = new providers.Web3Provider(this.wallet.provider);
+      const getProvider = this.wallet.provider;
+      const provider = new providers.Web3Provider(getProvider);
+      this.signer = provider.getSigner();
 
       // 默认账号
       const account = await this.signer.getAddress();

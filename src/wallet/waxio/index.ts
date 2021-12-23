@@ -34,6 +34,9 @@ class Waxio {
       // 默认账号
       this.account = account;
 
+      // signer实例
+      this.signer = {};
+
       // 授权过程完毕
       return true;
     } catch (error: any) {
