@@ -25,13 +25,13 @@ For more configuration details of the following tutorial, please move to the rel
 ### npm
 
 ```bash
-npm i --save blockchain-wallet-provider
+npm i --save wallet-ethers
 ```
 
 ### yarn
 
 ```bash
-yarn add blockchain-wallet-provider
+yarn add wallet-ethers
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ yarn add blockchain-wallet-provider
 ### ES6
 
 ```javascript
-import Wallet from "blockchain-wallet-provider";
+import Wallet from "wallet-ethers";
 ```
 
 ```javascript
