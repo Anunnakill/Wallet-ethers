@@ -2,13 +2,13 @@ import * as Web3 from "@solana/web3.js";
 import solWalletAdapter from "@project-serum/sol-wallet-adapter";
 
 class Sollet {
-  public web3: any;
+  public signer: any;
   public wallet: any;
   public account: any;
 
   constructor({ provider, network = "devnet" }: any) {
     // 初始化
-    this.web3 = {};
+    this.signer = {};
     this.wallet = {};
     this.account = "";
 
@@ -28,8 +28,8 @@ class Sollet {
       // 默认账号
       this.account = this.wallet.publicKey?.toBase58();
 
-      // web3实例
-      this.web3 = Web3;
+      // signer实例
+      this.signer = Web3;
 
       // 授权过程完毕
       return true;

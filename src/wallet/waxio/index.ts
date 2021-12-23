@@ -1,7 +1,7 @@
 import * as waxjs from "@waxio/waxjs/dist";
 
 class Waxio {
-  public web3: any;
+  public signer: any;
   public wallet: any;
   public account: any;
 
@@ -12,7 +12,7 @@ class Waxio {
     tryAutoLogin = true,
   }: any) {
     // 初始化
-    this.web3 = {};
+    this.signer = {};
     this.wallet = {};
     this.account = "";
 

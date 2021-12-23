@@ -1,5 +1,5 @@
-import Web3 from "web3";
 import config from "./config.json";
+import { providers } from "ethers";
 import WalletlinkProvider from "walletlink";
 
 interface Options {
@@ -10,13 +10,13 @@ interface Options {
 }
 
 class Walletlink {
-  public web3: any;
+  public signer: any;
   public wallet: any;
   public account: any;
 
   constructor({ appName, darkMode, appLogoUrl, network }: Options) {
     // 初始化
-    this.web3 = {};
+    this.signer = {};
     this.wallet = {};
     this.account = "";
 
@@ -39,12 +39,11 @@ class Walletlink {
       // 授权
       await this.wallet.enable();
 
-      // web3实例
-      this.web3 = new Web3(this.wallet);
+      // signer实例
+      this.signer = new providers.Web3Provider(this.wallet);
 
       // 默认账号
-      const [account] = await this.web3.eth.getAccounts();
-
+      const account = await this.signer.getAddress();
       this.account = account;
 
       // 授权过程完毕

@@ -128,8 +128,8 @@ try {
   // If the authorized login is successful:👇
   // Whether the specific attribute value exists, please check the notes below👇
 
-  // web3 object (instantiated).
-  console.log(wallet.web3);
+  // signer object (instantiated).
+  console.log(wallet.signer);
 
   // Wallet provider.
   console.log(wallet.wallet);
@@ -153,7 +153,7 @@ try {
 } catch (err) {
   // Catch all exception errors here.
   // If the authorization login fails.
-  // web3: {}
+  // signer: {}
   // account: ""
 }
 ```
@@ -206,21 +206,21 @@ wallet.onChainChanged(chainId => {
 
 ### ❗️❗️Official methods and events support
 
-1⃣️Walletconnect👉 web3js✅ login✅ logout✅ onAccountsChanged✅ onChainChanged✅
+1⃣️Walletconnect👉 signer✅ login✅ logout✅ onAccountsChanged✅ onChainChanged✅
 
-2⃣️Metamask👉 web3js✅ login✅ logout❌ onAccountsChanged✅ onChainChanged✅
+2⃣️Metamask👉 signer✅ login✅ logout❌ onAccountsChanged✅ onChainChanged✅
 
-3⃣️Portis👉 web3js✅ login✅ logout✅ onAccountsChanged✅ onChainChanged❌
+3⃣️Portis👉 signer✅ login✅ logout✅ onAccountsChanged✅ onChainChanged❌
 
-4⃣️Walletlink👉 web3js✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+4⃣️Walletlink👉 signer✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
-5⃣️Fortmatic👉 web3js✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+5⃣️Fortmatic👉 signer✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
-6⃣️Waxio👉 web3js❌ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
+6⃣️Waxio👉 signer❌ login✅ logout❌ onAccountsChanged❌ onChainChanged❌
 
-7⃣️Phantom👉 web3js(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+7⃣️Phantom👉 signer(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
-8⃣️Sollet👉 web3js(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
+8⃣️Sollet👉 signer(@solana/web3.js)✅ login✅ logout✅ onAccountsChanged❌ onChainChanged❌
 
 ## Supported Wallets & Integrations
 

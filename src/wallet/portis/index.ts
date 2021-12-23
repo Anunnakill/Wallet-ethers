@@ -1,14 +1,14 @@
-import Web3 from "web3";
+import { providers } from "ethers";
 import PortisProvider from "@portis/web3";
 
 class Portis {
-  public web3: any;
+  public signer: any;
   public wallet: any;
   public account: any;
 
   constructor({ dappId, network, config = {} }: any) {
     // 初始化
-    this.web3 = {};
+    this.signer = {};
     this.wallet = {};
     this.account = "";
 
@@ -22,12 +22,11 @@ class Portis {
       // 授权
       await this.wallet.provider.enable();
 
-      // web3实例
-      this.web3 = new Web3(this.wallet.provider);
+      // signer实例
+      this.signer = new providers.Web3Provider(this.wallet.provider);
 
       // 默认账号
-      const [account] = await this.web3.eth.getAccounts();
-
+      const account = await this.signer.getAddress();
       this.account = account;
 
       // 授权过程完毕

@@ -3,11 +3,11 @@
     "lib/**/*"
   ],
   "license": "ISC",
-  "version": "1.1.5",
+  "version": "1.0.0",
   "author": "JiCheng",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "name": "blockchain-wallet-provider",
+  "name": "wallet-ethers",
   "description": "A dapp wallet provider",
   "homepage": "https://github.com/Anunnakill/Wallet#readme",
   "scripts": {
@@ -15,7 +15,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "web3",
     "wax",
     "dapp",
     "waxio",
@@ -23,10 +22,11 @@
     "wallet",
     "sollet",
     "portis",
-    "web3.js",
+    "ethers",
+    "phantom",
     "provider",
     "metamask",
-    "phantom",
+    "ethers.js",
     "fortmatic",
     "blockchain",
     "walletlink",
@@ -50,9 +50,9 @@
     "@solana/web3.js": "^1.31.0",
     "@walletconnect/web3-provider": "^1.6.6",
     "@waxio/waxjs": "^1.0.4",
+    "ethers": "^5.5.2",
     "fortmatic": "^2.2.1",
-    "walletlink": "^2.1.11",
-    "web3": "^1.6.0"
+    "walletlink": "^2.1.11"
   },
   "devDependencies": {
     "typescript": "^4.4.4"

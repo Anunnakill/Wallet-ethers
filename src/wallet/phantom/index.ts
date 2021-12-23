@@ -1,13 +1,13 @@
 import * as Web3 from "@solana/web3.js";
 
 class Phantom {
-  public web3: any;
+  public signer: any;
   public wallet: any;
   public account: any;
 
   constructor() {
     // 初始化
-    this.web3 = {};
+    this.signer = {};
     this.wallet = {};
     this.account = "";
 
@@ -25,8 +25,8 @@ class Phantom {
       // 默认账号
       this.account = res.publicKey.toString();
 
-      // web3实例
-      this.web3 = Web3;
+      // signer实例
+      this.signer = Web3;
 
       // 授权过程完毕
       return true;

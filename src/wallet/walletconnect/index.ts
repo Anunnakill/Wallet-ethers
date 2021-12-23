@@ -1,15 +1,15 @@
-import Web3 from "web3";
 import json from "./rpc.json";
+import { providers } from "ethers";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 
 class Walletconnect {
-  public web3: any;
+  public signer: any;
   public wallet: any;
   public account: any;
 
   constructor({ rpc = {} }: any = {}) {
     // 初始化
-    this.web3 = {};
+    this.signer = {};
     this.wallet = {};
     this.account = "";
 
@@ -31,8 +31,8 @@ class Walletconnect {
       // 默认账号
       this.account = account;
 
-      // web3实例
-      this.web3 = new Web3(this.wallet);
+      // signer实例
+      this.signer = new providers.Web3Provider(this.wallet);
 
       // 授权过程完毕
       return true;
