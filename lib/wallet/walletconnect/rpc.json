@@ -1,0 +1,14 @@
+{
+    "250": "https://rpc.ftm.tools/",
+    "56": "https://bsc-dataseed.binance.org/",
+    "80001": "https://rpc-mumbai.matic.today",
+    "137": "https://rpc-mainnet.matic.network",
+    "1313161555": "https://testnet.aurora.dev",
+    "1313161554": "https://mainnet.aurora.dev",
+    "4002": "https://rpc.testnet.fantom.network/",
+    "43114": "https://api.avax.network/ext/bc/C/rpc",
+    "43113": "https://api.avax-test.network/ext/bc/C/rpc",
+    "97": "https://data-seed-prebsc-1-s1.binance.org:8545/",
+    "3": "https://ropsten.infura.io/v3/9e332d39364f4491aec5414fcbc4def7",
+    "1": "https://mainnet.infura.io/v3/9e332d39364f4491aec5414fcbc4def7"
+}

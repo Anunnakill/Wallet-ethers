@@ -1,0 +1,10 @@
+{
+    "ropsten": {
+        "id": 3,
+        "http": "https://ropsten.infura.io/v3/9e332d39364f4491aec5414fcbc4def7"
+    },
+    "mainnet": {
+        "id": 1,
+        "http": "https://mainnet.infura.io/v3/9e332d39364f4491aec5414fcbc4def7"
+    }
+}
