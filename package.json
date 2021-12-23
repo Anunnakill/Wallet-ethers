@@ -3,13 +3,13 @@
     "lib/**/*"
   ],
   "license": "ISC",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "JiCheng",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "name": "wallet-ethers",
   "description": "A dapp wallet provider",
-  "homepage": "https://github.com/Anunnakill/Wallet#readme",
+  "homepage": "https://github.com/Anunnakill/Wallet-ethers#readme",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,11 +38,11 @@
     "@solana/web3.js"
   ],
   "bugs": {
-    "url": "https://github.com/Anunnakill/Wallet/issues"
+    "url": "https://github.com/Anunnakill/Wallet-ethers/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Anunnakill/Wallet.git"
+    "url": "git+ssh://git@github.com/Anunnakill/Wallet-ethers.git"
   },
   "dependencies": {
     "@portis/web3": "^4.0.6",

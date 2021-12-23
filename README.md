@@ -18,7 +18,7 @@ For more configuration details of the following tutorial, please move to the rel
 
 ## Code Repository
 
-[https://github.com/Anunnakill/Wallet](https://github.com/Anunnakill/Wallet)
+[https://github.com/Anunnakill/Wallet-ethers](https://github.com/Anunnakill/Wallet-ethers)
 
 ## Installation
 
