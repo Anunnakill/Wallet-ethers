@@ -3,7 +3,7 @@
     "lib/**/*"
   ],
   "license": "ISC",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "author": "JiCheng",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
